@@ -15,7 +15,7 @@ deploy:
   project : ./build/
   domain : bootcamp_owys_8.surge.sh
   on:
-    branch: master
+    all_branches: true
   
   
   
