@@ -20,8 +20,7 @@ deploy:
   skip_cleanup: true
   project : ./build/
   domain : bootcamp_owys_8.surge.sh
-
-on:
+  on:
     all_branches: true
   
   
