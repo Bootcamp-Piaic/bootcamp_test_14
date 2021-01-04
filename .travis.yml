@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "stable"
+cache:
+  - npm
+  - yarn
+
 
 install:
   - yarn
@@ -12,10 +16,12 @@ script:
   
 deploy:
   provider: surge
+  skip_cleanup: true
   project : ./build/
   domain : bootcamp_owys_8.surge.sh
-  on:
-    all_branches: true
+
+on:
+    branch: master
   
   
   
