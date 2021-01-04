@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+
+install:
+  - yarn
+  
+script:
+  - npm install
+  - npm test 
+  - npm run build
+  
+deploy:
+  provider: surge
+  project : ./build/
+  domain : bootcamp_owys_8.surge.sh
+  on:
+    branch: master
+  
+  
+  
