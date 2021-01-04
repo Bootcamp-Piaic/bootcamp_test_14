@@ -2,7 +2,7 @@ language: node_js
 
 node_js:
   - "stable"
-  
+
 cache:
   - npm
   - yarn
@@ -22,7 +22,7 @@ deploy:
   domain : bootcamp_owys_8.surge.sh
 
 on:
-    branch: master
+    all_branches: true
   
   
   
